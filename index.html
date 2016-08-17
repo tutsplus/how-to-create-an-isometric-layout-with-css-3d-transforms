@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="description" content="Lazy load image with blurry effect as seen on Medium">
+
+    <meta property="og:url" content="https://lourfield.github.io/element-queries/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Isometric Layout Demo - Web Design Tuts+" />
+    <meta property="og:description" content="An isometric grid layout with 3D transformations. Inspired from Envato Elements" />
+    <meta property="og:image" content="https://tfirdaus.github.io/inline-sharing-button/images/office-4.jpg" />
+
+    <title>Isometric Grid Layout</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" defer>
+    if ( WebFont ) {
+        WebFont.load({
+            google: {
+                families: [ "Roboto:400,900", "Open Sans:300,400,800,800italic,400italic" ]
+            }
+        } );
+    }
+    </script>
+</head>
+<body>
+	<header class="site-header cf">
+        <h1>Isometric Grid Layout</h1>
+        <a href="#">Read Tutorial</a>
+    </header><div class="demo-content" id="content">
+	<div class="section">
+		<div class="column">
+			<!-- Item 1 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/herbert-lemuel-GHH8KT" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/001.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">Herbert Lemuel</h2>
+					<address class="ItemCard__meta designer">August10</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- Item 2 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/add-ons/roller-paint-brush-EZ9ZVZ" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/002.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Brushes</span>
+					<h2 class="ItemCard__title">Roller Paint Brush</h2>
+					<address class="ItemCard__meta designer">LeoSupply</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- Item 3 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphics/circle-stains-HNZL36" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/003.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Graphics</span>
+					<h2 class="ItemCard__title">Circle Stains</h2>
+					<address class="ItemCard__meta designer">Ghostlypixels</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- Item 4 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/add-ons/anaglyph-glitch-photo-fx-GDZBET" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/004.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Add-ons</span>
+					<h2 class="ItemCard__title">Anaglyph Photo FX</h2>
+					<address class="ItemCard__meta designer">Devotchkah</address>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="column">
+			<!-- Item 5 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/add-ons/vintage-halftone-instant-text-effects-4FZJFH" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/005.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Layer Styles</span>
+					<h2 class="ItemCard__title">Vintage Halftone...</h2>
+					<address class="ItemCard__meta designer">JRChild</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- Item 6 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/clarkson-script-DZTDPF" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/006.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">Clarkson Script...</h2>
+					<address class="ItemCard__meta designer">Adamfathony</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- Item 6 -->
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/native-instapress-2P9UW7" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/007.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">Native + Instapress</h2>
+					<address class="ItemCard__meta designer">Hustlesupplyco</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/in-the-wood-font-YTK7CV" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/008.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">In The Wood Font</h2>
+					<address class="ItemCard__meta designer">Simonok</address>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/add-ons/anaglyph-photoshop-actions-83X6R2" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/009.png" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Add-ons</span>
+					<h2 class="ItemCard__title">Anaglyph Photoshop Actions</h2>
+					<address class="ItemCard__meta designer">Micromove</address>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/add-ons/matte-faded-photoshop-actions-DDV4LP" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/010.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Add-ons</span>
+					<h2 class="ItemCard__title">Matte &amp; Faded Photoshop...</h2>
+					<address class="ItemCard__meta designer">Contrastly</address>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphic-templates/15-vintage-logos-badges-NVZU3J" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/011.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Logos</span>
+					<h2 class="ItemCard__title">15 Vintage Logos &amp; Badges</h2>
+					<address class="ItemCard__meta designer">Designdistrictmx</address>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/clarkson-script-DZTDPF" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/012.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Logos</span>
+					<h2 class="ItemCard__title">Trendy Vintage Logos...</h2>
+					<address class="ItemCard__meta designer">Designdistrictmx</address>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphic-templates/craft-branding-mockup-BC9TYC" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/013.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Product Mockups</span>
+					<h2 class="ItemCard__title">Craft Branding Mockup</h2>
+					<address class="ItemCard__meta designer">Genetic96</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/auther-typeface-SW5M8F" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/014.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">Auther Typeface</h2>
+					<address class="ItemCard__meta designer">Seniors_Studio</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphics/circle-stains-HNZL36" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/015.png" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Graphics</span>
+					<h2 class="ItemCard__title">Circle Stains</h2>
+					<address class="ItemCard__meta designer">Ghostlypixels</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphics/hand-illustrated-geometric-polygons-4C8JBJ" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/016.png" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Vectors</span>
+					<h2 class="ItemCard__title">Hand Illustrated Geo...</h2>
+					<address class="ItemCard__meta designer">Ghostlypixels</address>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphics/topographic-elevation-maps-9SSY8R" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/017.png" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Patterns</span>
+					<h2 class="ItemCard__title">Topographic Elevation Maps</h2>
+					<address class="ItemCard__meta designer">Ghostlypixels</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/campfire-stories-font-duo-DH6LQG" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/018.png" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">Campfire Stories Font Duo</h2>
+					<address class="ItemCard__meta designer">Michael_gilliam</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/graphic-templates/minimal-brochure-vol-ii-RBX34Q" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/019.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Graphics</span>
+					<h2 class="ItemCard__title">Minimal Brochure...</h2>
+					<address class="ItemCard__meta designer">Sz81</address>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="ItemCard">
+				<a class="ItemCard__dest cover" href="https://elements.envato.com/items/type/fonts/old-emma-W3R85K" target="_blank"></a>
+				<figure class="ItemCard__thumb">
+					<img src="./images/020.jpg" height="340" width="510" alt="">
+				</figure>
+				<div class="ItemCard__layer cover"></div>
+				<div class="ItemCard__summary cover">
+					<span class="ItemCard__meta category">Fonts</span>
+					<h2 class="ItemCard__title">Old Emma</h2>
+					<address class="ItemCard__meta designer">August10</address>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script>
+		(function() {
+
+			$( document )
+				.on( "mousemove", ".ItemCard", function( event ) {
+
+					console.log( "move" );
+
+					var sizeW = ( this.clientWidth / 2 );
+					var sizeH = ( this.clientHeight / 2 );
+
+					var coorX = ( sizeW - ( event.pageX - this.offsetLeft ) );
+					var coorY = ( sizeH - ( event.pageY - this.offsetTop ) );
+
+					var degX  = ( ( coorY / sizeH ) * 10 ) + 'deg'; // max. degree = 10
+					var degY  = ( ( coorX / sizeW ) * -10 ) + 'deg'; // max. degree = 10
+
+					$( this ).css( 'transform', function() {
+
+							return 'perspective( 600px ) translate3d( 0, -2px, 0 ) scale(1.1) rotateX('+ degX +') rotateY('+ degY +')';
+
+						} )
+						.children( '.ItemCard__summary' )
+							.css( 'transform', function() {
+								return 'perspective( 600px ) rotateX('+ degX +') rotateY('+ degY +')';
+							} );
+
+				} )
+				.on( "mouseout", ".ItemCard", function() {
+						$( this ).removeAttr( 'style' )
+							.children( '.ItemCard__summary' )
+								.removeAttr( 'style' );
+				} );
+
+		})();
+	</script>
+</body>
+</html>
