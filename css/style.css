@@ -155,23 +155,21 @@ body {
 .ItemCard__thumb {
   position: relative;
   z-index: 3;
+  width: 100%;
   padding: 0;
+  padding-top: 66.66666667%;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   background-color: #d7dcdd;
 }
-.ItemCard__thumb:before {
+.ItemCard__thumb img {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  padding-top: 66.66666667%;
-  display: block;
-  content: '';
-}
-.ItemCard__thumb img {
   display: block;
 }
 .ItemCard__layer {
