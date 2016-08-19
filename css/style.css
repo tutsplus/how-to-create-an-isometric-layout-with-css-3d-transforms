@@ -166,14 +166,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   padding-top: 66.66666667%;
   display: block;
   content: '';
 }
 .ItemCard__thumb img {
   display: block;
-  -webkit-transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s;
 }
 .ItemCard__layer {
   z-index: 10;
