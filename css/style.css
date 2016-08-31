@@ -74,38 +74,34 @@ mark {
     float: right;
   }
 }
-.section {
+.section--featured {
+  height: 860px;
+  background-color: #eaeaea;
+}
+.section--featured .row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-.section--featured {
-  height: 100vh;
-  background-color: #eaeaea;
-}
-.section--featured .row {
-  width: 60vw;
-  -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate3d(-200px, -100px, -50px);
-          transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate3d(-200px, -100px, -50px);
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 960px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate3d(-140vh, 0vh, 90vh) scale(1.2);
+          transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate3d(-140vh, 0vh, 90vh) scale(1.2);
 }
 .section--featured .column {
-  width: 400px;
-  max-width: 50%;
   padding: 20px;
+  width: 50%;
+  max-width: 50%;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 400px;
-      -ms-flex: 1 1 400px;
-          flex: 1 1 400px;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 .section--featured .shadow {
   display: block;
@@ -115,6 +111,20 @@ mark {
   opacity: .9;
   background-color: rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.12);
+}
+.section--featured .column:hover .ItemCard__thumb {
+  z-index: 10;
+}
+.section--featured .column:hover .ItemCard__thumb img {
+  -webkit-transform: translate3d(0, 0, 50px) rotateX(-5deg);
+          transform: translate3d(0, 0, 50px) rotateX(-5deg);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.section--featured .column:hover .ItemCard__thumb .shadow {
+  opacity: .6;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
 }
 .section--featured .ItemCard__thumb img {
   -webkit-transform: translate3d(0, 0, 15px);
@@ -130,20 +140,6 @@ mark {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.12);
   -webkit-animation: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) shadow 2;
           animation: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) shadow 2;
-}
-.section--featured .column:hover .ItemCard__thumb {
-  z-index: 10;
-}
-.section--featured .column:hover .ItemCard__thumb img {
-  -webkit-transform: translate3d(0, 0, 50px) rotateX(-5deg);
-          transform: translate3d(0, 0, 50px) rotateX(-5deg);
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
-}
-.section--featured .column:hover .ItemCard__thumb .shadow {
-  opacity: .6;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
 }
 .section--list .row {
   max-width: 1200px;
@@ -167,10 +163,39 @@ mark {
           transform-style: preserve-3d;
 }
 .hero {
-  width: 40vw;
-  padding: 120px 60px 120px 0;
   font-family: 'Roboto', sans-serif;
   color: #fff;
+  padding: 160px 40px 0 40px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+}
+@media screen and (min-width: 680px) {
+  .hero {
+    padding: 160px 100px 40px 40px;
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 840px) {
+  .hero {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .hero {
+    width: 60vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 40vw;
+  }
 }
 .hero h1 {
   margin: 0;
@@ -179,6 +204,7 @@ mark {
   color: #212a34;
 }
 .hero h2 {
+  font-weight: 400;
   font-size: 1.2em;
   opacity: .6;
   color: #212a34;
@@ -196,13 +222,25 @@ mark {
   border-radius: 30px;
   background-color: #ec3e3a;
 }
-.column {
-  width: 400px;
-  max-width: 33.333%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 400px;
-      -ms-flex: 1 1 400px;
-          flex: 1 1 400px;
+@media screen and (min-width: 640px) {
+  .column {
+    width: 320px;
+    max-width: 50%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 320px;
+        -ms-flex: 1 1 320px;
+            flex: 1 1 320px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .column {
+    width: 313.33333333px;
+    max-width: 33.333%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 313.33333333px;
+        -ms-flex: 1 1 313.33333333px;
+            flex: 1 1 313.33333333px;
+  }
 }
 .ItemCard {
   position: relative;
