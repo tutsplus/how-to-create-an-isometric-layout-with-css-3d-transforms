@@ -5,4 +5,4 @@ We draw inspiration for this tutorial from Envato’s latest initiative; Envato 
 
 **Available on [Envato Tuts+](https://tutsplus.com/courses) from September, 2016**
 
-[View the demo](http://tutsplus.github.io/)
+[View the demo](http://tutsplus.github.io/how-to-create-an-isometric-layout-with-css-3d-transforms)
