@@ -112,9 +112,11 @@ mark {
   background-color: rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.12);
 }
+.section--featured .column:hover .ItemCard__dest,
 .section--featured .column:hover .ItemCard__thumb {
   z-index: 10;
 }
+.section--featured .column:hover .ItemCard__dest,
 .section--featured .column:hover .ItemCard__thumb img {
   -webkit-transform: translate3d(0, 0, 50px) rotateX(-5deg);
           transform: translate3d(0, 0, 50px) rotateX(-5deg);
@@ -254,7 +256,6 @@ mark {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -270,6 +271,7 @@ mark {
 .ItemCard__thumb {
   position: relative;
   padding: 0;
+  pointer-events: none;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
@@ -277,13 +279,14 @@ mark {
 }
 .ItemCard__thumb img {
   display: block;
+  cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transform: translate3d(0, 0, 15px);
           transform: translate3d(0, 0, 15px);
-  border-radius: 8px;
+  border-radius: 6px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
